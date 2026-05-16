@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occasions - Dreamweaver Cards</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/Logo1.jpg" alt="Dreamweaver Cards Logo" width="150">
+                <h1>Dreamweaver Cards</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="occasions.html" class="active">Occasions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="occasions-section">
+    <div class="container">
+        <h2>Shop by Occasion</h2>
+
+        <!-- Occasion Links -->
+        <div class="occasion-grid">
+            <a href="#birthday" class="occasion-card">
+                <div class="occasion-icon">🎂</div>
+                <h3>Birthday</h3>
+            </a>
+
+            <a href="#anniversary" class="occasion-card">
+                <div class="occasion-icon">💍</div>
+                <h3>Anniversary</h3>
+            </a>
+
+            <a href="#wedding" class="occasion-card">
+                <div class="occasion-icon">💒</div>
+                <h3>Wedding</h3>
+            </a>
+        </div>
+
+        <!-- Birthday -->
+        <div id="birthday" class="cards-section">
+            <h3>Birthday Cards</h3>
+            <div class="cards-grid">
+
+                <div class="card-item">
+                    <img src="assets/images/birthday.webp">
+                    <h4>Archies Birthday Fun</h4>
+                    <span class="price">Rs 99</span>
+                    <button class="buy-btn" onclick="addToCart('Archies Birthday Fun', 99)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/birthday4.jpg">
+                    <h4>Hallmark Premium</h4>
+                    <span class="price">Rs 149</span>
+                    <button class="buy-btn" onclick="addToCart('Hallmark Premium', 149)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/birthdayimg1.jpg">
+                    <h4>Birthday Special</h4>
+                    <span class="price">Rs 119</span>
+                    <button class="buy-btn" onclick="addToCart('Birthday Special', 119)">Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Anniversary -->
+        <div id="anniversary" class="cards-section">
+            <h3>Anniversary Cards</h3>
+            <div class="cards-grid">
+
+                <div class="card-item">
+                    <img src="assets/images/anniversary.jpg">
+                    <h4>Romantic Love</h4>
+                    <span class="price">Rs 129</span>
+                    <button class="buy-btn" onclick="addToCart('Romantic Love', 129)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/Anniversary-Images.jpg">
+                    <h4>Golden Moments</h4>
+                    <span class="price">Rs 149</span>
+                    <button class="buy-btn" onclick="addToCart('Golden Moments', 149)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/birthday2.jpg">
+                    <h4>Forever Together</h4>
+                    <span class="price">Rs 139</span>
+                    <button class="buy-btn" onclick="addToCart('Forever Together', 139)">Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Wedding -->
+        <div id="wedding" class="cards-section">
+            <h3>Wedding Cards</h3>
+            <div class="cards-grid">
+
+                <div class="card-item">
+                    <img src="assets/images/wedding3.jpg">
+                    <h4>Wedding Bliss</h4>
+                    <span class="price">Rs 179</span>
+                    <button class="buy-btn" onclick="addToCart('Wedding Bliss', 179)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/wedding3.jpg">
+                    <h4>Elegant Wedding</h4>
+                    <span class="price">Rs 159</span>
+                    <button class="buy-btn" onclick="addToCart('Elegant Wedding', 159)">Buy Now</button>
+                </div>
+
+                <div class="card-item">
+                    <img src="assets/images/wedding3.jpg">
+                    <h4>New Beginnings</h4>
+                    <span class="price">Rs 169</span>
+                    <button class="buy-btn" onclick="addToCart('New Beginnings', 169)">Buy Now</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Order Now</h2>
+
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+
+      <input type="text" id="product" readonly>
+
+      <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+
+      <textarea id="address" placeholder="Address" required></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container footer-content">
+        
+        <div class="footer-section">
+            <h3>Dreamweaver Cards</h3>
+            <p>Premium greeting cards for every occasion.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="occasions.html">Occasions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: info@dreamweaver.com</p>
+            <p>Phone: +92 9876543210</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Dreamweaver Cards | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"> </script>
+</body>
+</html>
+
